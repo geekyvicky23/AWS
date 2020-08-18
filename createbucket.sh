@@ -1,5 +1,5 @@
-#!/bash/shell
+#!/bin/sh
 aws configure --profile devuser
 echo "PROFILE SWITCHED TO DEVUSER..."
-s3://$bucketname
+aws s3api create-bucket --bucket test-bkt-0135 --region ap-south-1
 echo "BUCKET CREATED.."
